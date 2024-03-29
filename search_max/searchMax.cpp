@@ -15,6 +15,7 @@ void *find_max(void *arg){
     int start = thread_id * (ARRAY_LENGTH / NUM_THREADS);
     int end = start + ( ARRAY_LENGTH / NUM_THREADS);
     //int max = array[start];
+    /*test*/
 
     int item, j;
 
@@ -81,7 +82,6 @@ int main() {
     }
     gettimeofday( &l_time_after, NULL );
     printf( "The search time: %d [ms]\n", timeval_diff_to_ms( &l_time_before, &l_time_after ) );
-
 
     
     return 0;
